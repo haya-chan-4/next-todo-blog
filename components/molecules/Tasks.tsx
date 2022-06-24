@@ -18,7 +18,7 @@ const reorder = (taskList: any[], startIndex: any, endIndex: any) => {
 export const Tasks: VFC<Props> = (props: { taskList: any; setTaskList: any; }) => {
   const { taskList, setTaskList } = props;
 
-  const handleDragEnd = (result: { source: { index: any; }; destination: { index: any; }; dest: any; }) => {
+  const handleDragEnd = (result: any) => {
     reorder(taskList, result.source.index, result.destination.index);
     setTaskList(taskList, result.source.index, result.dest)
   }
