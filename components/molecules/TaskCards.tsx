@@ -24,7 +24,7 @@ export const TaskCards: VFC<Props> = (props) => {
     }
   ]);
 
-  const handleDragEnd = (result: { source: { index: any; }; destination: { index: any; }; }) => {
+  const handleDragEnd = (result: any) => {
     reorder(taskCardsList, result.source.index, result.destination.index);
     setTaskCardsList(taskCardsList);
   }
