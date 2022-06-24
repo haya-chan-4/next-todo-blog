@@ -1,15 +1,14 @@
 import { Layout } from '../components/organisations/Layout'
 import { Auth } from '../components/Auth'
 import { NextPage } from 'next'
-import { TaskCards } from '../components/molecules/TaskCards'
 
-
-const Home: NextPage = () => {
+const Blog: NextPage = () => {
   return (
     <Layout title="login">
-      <TaskCards />
+      {/* <Auth /> */}
+      <p className='text-4xl'>Blog</p>
     </Layout>
   )
 }
 
-export default Home
+export default Blog
